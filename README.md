@@ -19,7 +19,7 @@ A docsify plugin to render [AntV Infographic](https://infographic.antv.vision/) 
 <!-- 加载 AntV Infographic -->
 <script src="https://unpkg.com/@antv/infographic@latest/dist/infographic.min.js"></script>
 <!-- 加载插件 -->
-<script src="//unpkg.com/docsify-infographic@latest/dist/docsify-infographic.js"></script>
+<script src="https://unpkg.com/docsify-infographic@latest/dist/docsify-infographic.js"></script>
 ```
 
 ## 配置选项
