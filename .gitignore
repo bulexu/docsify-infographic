@@ -18,10 +18,3 @@ dist/
 # Claude
 .claude/
 
-# Reference projects (not part of this repo)
-mermaid-docsify/
-infographic-vscode-extension/
-markdown-it-infographic/
-
-# Test files
-test-multiple.html
