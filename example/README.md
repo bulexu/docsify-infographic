@@ -251,7 +251,7 @@ data
 
 ### 未指定尺寸（使用全局配置）
 
-```infographic
+```infographic 70%*800px
 infographic chart-pie-donut-pill-badge
 data
   title 全局配置尺寸
