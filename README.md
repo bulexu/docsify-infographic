@@ -49,6 +49,34 @@ A docsify plugin to render [AntV Infographic](https://infographic.antv.vision/) 
     ```
 ```
 
+### 自定义尺寸
+
+可以为单个信息图指定宽度和高度。支持像素（px）和百分比（%）：
+
+```shell
+    ```infographic 100px*100px
+    infographic list-row-simple-horizontal-arrow
+      data
+        title: 小尺寸图表
+    ```
+
+    ```infographic 50%*80%
+    infographic chart-column-simple
+      data
+        title: 宽图表
+    ```
+
+    ```infographic 400px*auto
+    infographic chart-pie-donut-pill-badge
+      data
+        title: 固定宽度图表
+    ```
+```
+
+- `infographic 100px*100px` - 固定像素尺寸
+- `infographic 50%*80%` - 相对父容器的百分比尺寸
+- 未指定时使用全局配置的默认值
+
 更多图表类型和语法请参考 [AntV Infographic 文档](https://infographic.antv.vision/learn)。
 
 ## 开发

@@ -163,9 +163,125 @@ data
     value 100
 ```
 
+## 尺寸控制
+
+### 使用像素尺寸
+
+```infographic 200px*150px
+infographic list-row-simple-horizontal-arrow
+  data
+    lists
+      - label 小尺寸
+        desc 200px*150px
+      - label 流程
+        desc 使用固定像素
+```
+
+### 使用百分比尺寸
+
+```infographic 50%*80%
+infographic chart-column-simple
+data
+  title 百分比尺寸示例
+  desc 宽 50%，高 80%
+  values
+    - label A
+      value 100
+    - label B
+      value 80
+    - label C
+      value 60
+```
+
+### 固定宽度，自适应高度
+
+```infographic 400px*auto
+infographic chart-line-plain-text
+data
+  title 固定宽度示例
+  desc 宽度 400px，高度自适应
+  values
+    - label 一月
+      value 50
+    - label 二月
+      value 75
+    - label 三月
+      value 90
+    - label 四月
+      value 110
+  data
+    lists
+      - time 2024-01
+        title Q1计划
+        desc 制定季度目标
+      - time 2024-02
+        title 实施阶段
+        desc 按计划推进
+```
+
+### 大尺寸图表
+
+```infographic 600px*500px
+infographic hierarchy-tree-distributed-origin-rounded-rect-node
+data
+  title 大尺寸组织架构
+  desc 600px*500px 的大图表
+  root
+    label 总部
+    value 100
+    icon mingcute/building-4-line
+    children
+      - label 研发部
+        value 80
+        icon mingcute/code-line
+        children
+          - label 前端组
+            value 40
+          - label 后端组
+            value 40
+      - label 产品部
+        value 70
+        icon mingcute/lightbulb-line
+        children
+          - label 设计组
+            value 35
+          - label 规划组
+            value 35
+```
+
+### 未指定尺寸（使用全局配置）
+
+```infographic
+infographic chart-pie-donut-pill-badge
+data
+  title 全局配置尺寸
+  desc 使用 index.html 中配置的默认尺寸
+  values
+    - label 产品A
+      value 40
+      icon lucide/package
+    - label 产品B
+      value 30
+      icon lucide/box
+    - label 产品C
+      value 20
+      icon lucide/shopping-bag
+    - label 其他
+      value 10
+      icon lucide/more-horizontal
+  data
+    lists
+      - time Q1
+        title 销售分析
+        desc 统计各产品销售占比
+      - time Q2
+        title 增长预测
+        desc 预计整体增长15%
+```
+
 ## 配置说明
 
-在 index.html 中配置 infographic 插件：
+在 index.html 中配置 infographic 插件的全局默认尺寸：
 
 ```html
 <script>
@@ -177,3 +293,10 @@ data
   };
 </script>
 ```
+
+### 尺寸语法说明
+
+- **固定像素**: `infographic 200px*150px` - 宽 200px，高 150px
+- **百分比**: `infographic 50%*80%` - 宽 50%，高 80%（相对于父容器）
+- **自适应**: `infographic 400px*auto` - 固定宽度，高度自适应
+- **全局配置**: 未指定尺寸时，使用 `infographicConfig` 中的默认值
