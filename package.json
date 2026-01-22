@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/docsify-infographic.git"
+    "url": "git+https://github.com/bulexu/docsify-infographic.git"
   },
   "keywords": [
     "docsify",
@@ -18,17 +18,17 @@
     "antv",
     "diagram"
   ],
-  "author": "",
+  "author": "bulexu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yourusername/docsify-infographic/issues"
+    "url": "https://github.com/bulexu/docsify-infographic/issues"
   },
   "files": [
     "README.md",
     "src/",
     "dist/"
   ],
-  "homepage": "https://github.com/yourusername/docsify-infographic#readme",
+  "homepage": "https://github.com/bulexu/docsify-infographic#readme",
   "devDependencies": {
     "docsify-cli": "^4.4.0",
     "parcel-bundler": "^1.8.1"
