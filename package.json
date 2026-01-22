@@ -1,6 +1,6 @@
 {
   "name": "docsify-infographic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin to render AntV Infographic diagrams in docsify",
   "browser": "src/index.js",
   "scripts": {
