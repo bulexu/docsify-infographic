@@ -35,16 +35,18 @@ A docsify plugin to render [AntV Infographic](https://infographic.antv.vision/) 
 
 在 Markdown 中使用 `infographic` 作为代码块语言标识：
 
-```infographic
-infographic list-row-simple-horizontal-arrow
-  data
-    lists
-      - label 步骤 1
-        desc 开始
-      - label 步骤 2
-        desc 进行中
-      - label 步骤 3
-        desc 完成
+```shell
+    ```infographic
+    infographic list-row-simple-horizontal-arrow
+      data
+        lists
+          - label 步骤 1
+            desc 开始
+          - label 步骤 2
+            desc 进行中
+          - label 步骤 3
+            desc 完成
+    ```
 ```
 
 更多图表类型和语法请参考 [AntV Infographic 文档](https://infographic.antv.vision/learn)。
